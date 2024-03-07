@@ -55,26 +55,19 @@
     "supportEmail": "dev@wemotiveforge.com",
     "webClientUri": "http://192.168.0.11:3000"
   },
-  "cors":  {
-    "whitelistUrls":  ["http://localhost:3000", "http://127.0.0.1:3000"]
-  },
   "cors": {
-    "whitelistUrls": [
-      "http://localhost:3000",
-      "https://localhost:3000"
-    ]
+    "whitelistUrls": ["http://localhost:3000", "https://localhost:3000"]
   },
   "directory": {
     "profilePictures": "PROFILE_PICTURES"
   },
   "cookieOptions": {
-    "httpOnly": true,
+    "httpOnly": false,
     "secure": false,
     "sameSite": false
   },
   "general": {
-    "exceptionEmailRecipientList": [
-    ]
+    "exceptionEmailRecipientList": []
   },
   "seller": {
     "serverUrl": "http://localhost:3019"
@@ -93,15 +86,9 @@
       "time": {
         "days": "1,2,3,4,5,6,7",
         "schedule": {
-          "holidays": [
-            "2022-08-15",
-            "2022-08-19"
-          ],
+          "holidays": ["2022-08-15", "2022-08-19"],
           "frequency": "PT4H",
-          "times": [
-            "1100",
-            "1900"
-          ]
+          "times": ["1100", "1900"]
         },
         "range": {
           "start": "1100",
@@ -125,14 +112,13 @@
           "country": "India"
         }
       },
-      "contact":
-      {
+      "contact": {
         "phone": "98860 98860",
         "email": "abcd.efgh@gmail.com"
       }
     }
   },
-  "settlement_details":   [
+  "settlement_details": [
     {
       "settlement_counterparty": "buyer-app",
       "settlement_type": "upi",
